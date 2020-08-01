@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>My website</title>
+<link href="beautify.css" rel="stylesheet" type="text/css">
+
+<style>
+    * {
+        box-sizing: border-box;
+    }
+    body {
+        margin: 0;
+    }
+
+/* Style the header */
+    .header {
+        background-color: #f1f1f1;
+        padding: 10px;
+        text-align: center;
+        font: 15px times new Roman
+    }
+
+    .header2 {
+        padding: 5px;
+        text-align: center;
+        font: 15px times new Roman
+    }
+
+
+/* Style the top navigation bar */
+    .navegation {
+        overflow: hidden;
+        background-color: #333;
+    }
+
+/* Style the topnav links */
+    .navegation a {
+        float: right;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 20px;
+        text-decoration: none;
+
+    }
+
+/* Change color on hover */
+    .navegation a:hover {
+        background-color: white;
+        color: black;
+    }
+
+    .column1 {
+        float: left;
+        width: 33.33%;
+        padding: 15px;
+    }
+
+    .column2{
+        float: right;
+        width: 66.67%;
+        padding: 15px;
+        height:100%;
+
+    }
+
+
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+    @media screen and (max-width:600px) {
+      .column1 {
+        width: 33.33%;
+      }
+      .column2{
+        width: 66.77%;
+    }
+
+    .center{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+
+    #borderimg { 
+        border: 10px solid transparent;
+        padding: 15px;
+        border-image-source: url(circle.png);
+        border-image-repeat: round;  
+        border-image-slice: 30;
+        border-image-width: 30px;    
+}
+
+</style>
+
+
+
+<div class= "navegation">
+    <a href= "Ambitions.html">Programs</a>
+    <a href= "AboutMe.html">About Me</a>
+    <a href= "index.html">Home</a>
+</div>
+
+<div class = "header">
+    <h1>Roberts Website</h1>
+</div>
+
+<div class="row">
+  <div class="column1">
+    <img src="RobPic.JPEG" alt="RobPic" height= "375" width="300" class = center>
+    <div class="header2"><h3>A Little About Me</h3></div>
+    <p>I am currently a rising sophmore at Boston University and am pursuing a Bachelors in Computer Science and a second major in Psychology. If you would like to know more about me you can look over some of the links below:</p>
+    <div class="dlist">
+        <details>
+                <p> - <a href= "AboutMe.html">About Me </a></p>
+            <summary>Links</summary>
+                 <p> - <a href="https://linkedin.com/in/robert-steger-b6440b19b">My Linkdin</a></p>
+        </details>
+    </div>
+
+  </div>
+  
+  <div class="column2">
+            <div class="header2"><h3>Why?</h3></div>
+            <p id="borderimg"> There used to be a paragraph here... </p>
+    </div>
+ </div>
+
+
+</html>
